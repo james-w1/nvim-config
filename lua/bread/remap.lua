@@ -1,4 +1,10 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = "/"
+
+-- neorg remaps
+vim.keymap.set('n', '<leader>ni', '<cmd>Neorg index<CR>', {})
+vim.keymap.set('n', '<leader>nr', '<cmd>Neorg return<CR>', {})
+
 -- go to netrw
 vim.keymap.set('n', '<leader>e', '<cmd>Ex<CR>', {})
 vim.keymap.set('n', '<leader>w', '<cmd>w<CR>', {})

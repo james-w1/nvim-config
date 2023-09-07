@@ -16,8 +16,7 @@ return require('packer').startup(function(use)
 	use 'skywind3000/asyncrun.vim'
 	use 'lukas-reineke/indent-blankline.nvim'
 	use 'nvim-lualine/lualine.nvim'
-	use 'jiangmiao/auto-pairs'
-	use 'luochen1990/rainbow'
+	-- use 'jiangmiao/auto-pairs'
 	use 'nguyenvukhang/nvim-toggler'
 	use 'mbbill/undotree'
     -- highlight colours
@@ -29,6 +28,12 @@ return require('packer').startup(function(use)
     use "folke/zen-mode.nvim"
 
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+
+    use {
+        "nvim-neorg/neorg",
+        run = ":Neorg sync-parsers",
+        requires = "nvim-lua/plenary.nvim",
+    }
 
 	-- LSP Setup using LSPZero
 	use {
