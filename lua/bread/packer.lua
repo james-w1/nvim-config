@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
 	use 'tpope/vim-surround'
 	use 'tpope/vim-fugitive'
 	use 'skywind3000/asyncrun.vim'
-	use 'lukas-reineke/indent-blankline.nvim'
+	-- use 'lukas-reineke/indent-blankline.nvim'
 	use 'nvim-lualine/lualine.nvim'
 	-- use 'jiangmiao/auto-pairs'
 	use 'nguyenvukhang/nvim-toggler'
